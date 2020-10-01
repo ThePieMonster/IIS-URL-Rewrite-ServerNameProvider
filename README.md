@@ -9,11 +9,11 @@ Perform the following actions on the IIS server
 <ol>
   <li>Download [IIS-URL-Rewrite-ServerNameProvider DLL](https://github.com/ThePieMonster/IIS-URL-Rewrite-ServerNameProvider/releases/) to C:\Temp</li>
   
-  <li>Copy NETFX-4.8-Tools to C:\Temp</li>
+  <li>Copy [NETFX-4.8-Tools](https://sourceforge.net/projects/netfx-4-8-tools/files/NETFX-4.8-Tools.zip/download) to C:\Temp</li>
  
-  <li>& 'C:\Temp\NETFX-4.8-Tools\gacutil.exe' -i "C:\Temp\IIS-URL-Rewrite-ServerNameProvider.dll"</li>
+  <li>Run the following command: `& 'C:\Temp\NETFX-4.8-Tools\gacutil.exe' -i "C:\Temp\IIS-URL-Rewrite-ServerNameProvider.dll"`</li>
   
-  <li>& 'C:\Temp\NETFX-4.8-Tools\gacutil.exe' -l</li>
+  <li>Run the following command: `& 'C:\Temp\NETFX-4.8-Tools\gacutil.exe' -l`</li>
   
   <li>Open IIS -> URL Rewrite (either at server level or site level)</li>
     
