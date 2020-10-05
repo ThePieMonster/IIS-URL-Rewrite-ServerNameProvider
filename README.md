@@ -8,8 +8,8 @@ IIS URL Rewrite variable to display the hosts machine name in the response heade
 Perform the following actions on the IIS server
 1. Download [IIS-URL-Rewrite-ServerNameProvider DLL](https://github.com/ThePieMonster/IIS-URL-Rewrite-ServerNameProvider/releases/) to C:\Temp
 2. Copy [NETFX-4.8-Tools](https://sourceforge.net/projects/netfx-4-8-tools/files/NETFX-4.8-Tools.zip/download) to C:\Temp
-3. Run the following command: `& 'C:\Temp\NETFX-4.8-Tools\gacutil.exe' -i "C:\Temp\IIS-URL-Rewrite-ServerNameProvider.dll"`
-4. Run the following command: `& 'C:\Temp\NETFX-4.8-Tools\gacutil.exe' -l`
+3. Run the following PowerShell command to register assembly to the Global Assembly Cache (GAC): `& 'C:\Temp\NETFX-4.8-Tools\gacutil.exe' -i "C:\Temp\IIS-URL-Rewrite-ServerNameProvider.dll"`
+4. (Optional) Run the following PowerShell command to view the contents of the GAC: `& 'C:\Temp\NETFX-4.8-Tools\gacutil.exe' -l`
 5. Open IIS -> URL Rewrite (either at server level or site level)
    ![IIS-1.png](https://i.postimg.cc/85r2KfG8/IIS-1.png)
 6. Select "View Providers..."
